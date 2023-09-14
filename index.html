@@ -1,72 +1,124 @@
-<!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-  <div class="tradingview-widget-container__widget"></div>
-  <div class="tradingview-widget-copyright"><a href="https://br.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Monitore todos os mercados no TradingView</span></a></div>
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
-  {
-    "symbols": [
-      {
-        "proName": "FOREXCOM:SPXUSD",
-        "title": "S&P 500"
-      },
-      {
-        "proName": "FOREXCOM:NSXUSD",
-        "title": "US 100"
-      },
-      {
-        "proName": "BITSTAMP:BTCUSD",
-        "title": "Bitcoin"
-      },
-      {
-        "description": "IBOV",
-        "proName": "BMFBOVESPA:IBOV"
-      },
-      {
-        "description": "10Y Treasuries ",
-        "proName": "TVC:US10Y"
-      },
-      {
-        "description": "10Y Gilt",
-        "proName": "OANDA:UK10YBGBP"
-      },
-      {
-        "description": "Fed Funds",
-        "proName": "FRED:FEDFUNDS"
-      },
-      {
-        "description": "SELIC",
-        "proName": "ECONOMICS:BRINTR"
-      },
-      {
-        "description": "ECB Rate",
-        "proName": "ECONOMICS:EUINTR"
-      }
-    ],
-    "showSymbolLogo": true,
-    "colorTheme": "light",
-    "isTransparent": true,
-    "largeChartUrl": "",
-    "displayMode": "adaptive",
-    "locale": "br"
-  }
-  </script>
-</div>
-<!-- TradingView Widget END -->
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Style the tabs */
+    .tab {
+      display: none;
+    }
 
-<!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-  <div class="tradingview-widget-container__widget"></div>
-  <div class="tradingview-widget-copyright"><a href="https://br.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Monitore todos os mercados no TradingView</span></a></div>
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-events.js" async>
-  {
-    "width": "100%",
-    "height": "100%",
-    "colorTheme": "light",
-    "isTransparent": true,
-    "locale": "br",
-    "importanceFilter": "-1,0,1",
-    "currencyFilter": "AUD,BRL,USD,CAD,CLP,COP,EUR,FRF,DEM,ITL,JPY,MXN,NZD,ZAR,ESP,CHF,TRL,GBP"
-  }
-  </script>
+    /* Style the tab button container */
+    .tab-buttons {
+      display: flex;
+    }
+
+    /* Style the individual tab button */
+    .tab-button {
+      padding: 10px 20px;
+      cursor: pointer;
+      border: 1px solid #ccc;
+      background-color: #f1f1f1;
+    }
+
+    /* Style the active tab button */
+    .active {
+      background-color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+<div class="tab-buttons">
+  <div class="tab-button" onclick="openTab('tab1')">Tab 1</div>
+  <div class="tab-button" onclick="openTab('tab2')">Tab 2</div>
 </div>
-<!-- TradingView Widget END -->
+
+<div class="tab" id="tab1">
+  <!-- TradingView Widget BEGIN -->
+  <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://br.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Monitore todos os mercados no TradingView</span></a></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+    {
+      "symbols": [
+        {
+          "proName": "FOREXCOM:SPXUSD",
+          "title": "S&P 500"
+        },
+        {
+          "proName": "FOREXCOM:NSXUSD",
+          "title": "US 100"
+        },
+        {
+          "proName": "BITSTAMP:BTCUSD",
+          "title": "Bitcoin"
+        },
+        {
+          "description": "IBOV",
+          "proName": "BMFBOVESPA:IBOV"
+        },
+        {
+          "description": "10Y Treasuries ",
+          "proName": "TVC:US10Y"
+        },
+        {
+          "description": "10Y Gilt",
+          "proName": "OANDA:UK10YBGBP"
+        },
+        {
+          "description": "Fed Funds",
+          "proName": "FRED:FEDFUNDS"
+        },
+        {
+          "description": "SELIC",
+          "proName": "ECONOMICS:BRINTR"
+        },
+        {
+          "description": "ECB Rate",
+          "proName": "ECONOMICS:EUINTR"
+        }
+      ],
+      "showSymbolLogo": true,
+      "colorTheme": "light",
+      "isTransparent": true,
+      "largeChartUrl": "",
+      "displayMode": "adaptive",
+      "locale": "br"
+    }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+</div>
+
+<div class="tab" id="tab2">
+  <!-- TradingView Widget BEGIN -->
+  <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://br.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Monitore todos os mercados no TradingView</span></a></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-events.js" async>
+    {
+      "width": "100%",
+      "height": "100%",
+      "colorTheme": "light",
+      "isTransparent": true,
+      "locale": "br",
+      "importanceFilter": "-1,0,1",
+      "currencyFilter": "AUD,BRL,USD,CAD,CLP,COP,EUR,FRF,DEM,ITL,JPY,MXN,NZD,ZAR,ESP,CHF,TRL,GBP"
+    }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+</div>
+
+<script>
+function openTab(tabName) {
+  var tabs = document.getElementsByClassName("tab");
+  for (var i = 0; i < tabs.length; i++) {
+    tabs[i].style.display = "none";
+  }
+  document.getElementById(tabName).style.display = "block";
+}
+</script>
+
+</body>
+</html>
